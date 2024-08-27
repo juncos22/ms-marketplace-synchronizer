@@ -1,0 +1,26 @@
+@apiUrl = http://localhost:3000
+
+### GET /categories_pulpo
+GET {{apiUrl}}/categories_pulpo HTTP/1.1
+
+### POST /category_attributes_pulpo
+POST {{apiUrl}}/category_attributes_pulpo HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "categoryIds:": [ 
+        "MLC437378",
+        "MLC437402",
+        "MLC437377",
+        "MLC403084",
+        "MLC437379",
+        "MLC437380",
+        "MLC437382",
+        "MLC437381",
+        "MLC437383"
+    ]
+}
+
+-H 'Authorization: Bearer $ACCESS_TOKEN'
+curl -X GET  https://api.mercadolibre.com/sites/MLA/categories/all?withAttributes=true > mla.gz

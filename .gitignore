@@ -1,0 +1,7 @@
+/node_modules
+/dist
+build
+.env
+.vscode/
+/src/utils/docs/categories.json
+/src/utils/docs/mla.json
